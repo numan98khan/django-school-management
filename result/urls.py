@@ -1,8 +1,11 @@
-from django.urls import path
+from django.urls import include, path, re_path
+# import accounting.urls
 from .import views
+from accounting.views import *
 
 urlpatterns = [
 	path('', views.home, name="home"),
+	path('accounting/', include('accounting.urls')),
 	path('score/', views.add_score, name='add_score'),
 	path('score/<int:id>/', views.add_score_for, name='add_score_for'),
 	path('profile/', views.profile, name='profile'),

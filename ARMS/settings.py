@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'result',
     'crispy_forms',
+    'mptt',
+    'accounting',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
