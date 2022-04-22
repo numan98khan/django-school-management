@@ -1,4 +1,4 @@
 dj_database_url==0.5.0
 reportlab==3.5.32
-Django==2.2.3
+Django==2.2.28
 django_mptt==0.10.0
